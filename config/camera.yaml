@@ -1,0 +1,23 @@
+width: 1920             # width of the image provided by the device (in pixel) (32 to 1920)
+height: 1200            # height of the image provided by the device (in pixel) (32 to 1200)
+Offset_x: 0             # vertical offset from the origin (in pixel)
+Offset_y: 0             # horizontal offset from the origin (in pixel)
+
+FrameRateEnable: true   # frame rate enable
+FrameRate: 25           # acquisition frame rate (this value is used when trigger mode is off)	
+BurstFrameCount: 1      # number of frames to acquire for each FrameBurstStart trigger
+
+ExposureAuto: 0         # 0:Off | 1:Once | 2:Continous
+ExposureTime: 1000.0    # exposure time in microseconds (59 to 999957)
+
+GammaEnable: false      # 0:Off | 1:On
+Gamma: 0.7              # gamma adjustment (0.0 to 4.0)
+
+GainAuto: 2             # 0:Off | 1:Once | 2:Continous 
+ 
+SaturationEnable: 0     # 0:Off | 1:On
+Saturation: 10          # saturation adjustement
+
+TriggerMode: 0          # 0:Off | 1:On   
+TriggerSource: 2        # 0:Line0 | 1:Line1 | 2:Line2 | 3:Line3 | 4:Counter0 | 7:Software | 8:FrequencyConverter  
+LineSelector: 2         # 0:Line0 | 1:Line1 | 2:Line2 | 3:Line3 | 4:Line4 

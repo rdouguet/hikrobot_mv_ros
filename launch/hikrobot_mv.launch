@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+	<!-- Define a namespace (all data published start by this name) -->
+    <arg name="namespace" default="hikrobot_mv"/>
+    
+    <!-- Define the frame_id -->
+    <arg name="frame_id" default="hikrobot_cam"/>
+
+    <!-- load the config file -->
+	<group ns="camera_mv">
+		<rosparam command="load" file="$(find hikrobot_mv_ros)/config/camera.yaml"  />
+    </group>
+    
+	<!-- start the node -->
+    <node pkg="hikrobot_mv_ros" type="hikrobot_mv_ros_node" name="hikrobot_mv_ros_node" respawn="false" output="screen" ns="$(arg namespace)" >
+		<param name="frame_id" type="str" value="$(arg frame_id)"/>
+    </node>
+</launch>

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<library path="lib/libhikrobot_mv_driver">
+  <class name="hikrobot_mv_ros/HikrobotMVDriver" type="hikrobot_mv_ros::HikrobotMVDriver" base_class_type="nodelet::Nodelet">
+    <description>
+      Nodelet for hikrobot mv camera
+    </description>
+  </class>
+</library>

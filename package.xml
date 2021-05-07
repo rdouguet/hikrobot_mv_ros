@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>hikrobot_mv_ros</name>
+  <version>0.0.1</version>
+  <description>A camera driver to publish raw images from the hikrobot mv camera</description>
+  <license>MIT</license>
+
+  <maintainer email="ronan.douguet@univ-ubs.fr">Ronan Douguet</maintainer>
+  <author email="ronan.douguet@univ-ubs.fr">Ronan Douguet</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>nodelet</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>cv_bridge</build_depend>
+  <build_depend>image_transport</build_depend>
+  <build_depend>camera_info_manager</build_depend>  
+
+  <build_export_depend>nodelet</build_export_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>sensor_msgs</build_export_depend>
+  <build_export_depend>cv_bridge</build_export_depend>
+  <build_export_depend>image_transport</build_export_depend>  
+  <build_export_depend>camera_info_manager</build_export_depend>  
+
+  <exec_depend>nodelet</exec_depend>
+  <exec_depend>roscpp</exec_depend>  
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>image_transport</exec_depend>
+  <exec_depend>camera_info_manager</exec_depend>  
+
+  <export>
+    <nodelet plugin="${prefix}/nodelet_plugins.xml"/>
+  </export>
+</package>
