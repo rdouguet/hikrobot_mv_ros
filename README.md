@@ -49,8 +49,6 @@ A roslaunch file allows to define some parameters (frame_id, path of config file
 $ roslaunch hikrobot_mv_ros hikrobot_mv.launch
 ```
 
-## Config files
-
-Config file folder/set 1
+## Config file
 
 * **camera.yaml** contains the camera parameter which can set during the driver initialization
